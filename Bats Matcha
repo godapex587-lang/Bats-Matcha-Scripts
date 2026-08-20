@@ -9,10 +9,10 @@ local lp = pls.LocalPlayer
 
 -- Purple UI palette for Wabi Sabi's Drawing-based interface.
 local PurpleUI = {
-    Main = Color3.fromRGB(105, 45, 160),
-    Accent = Color3.fromRGB(170, 90, 235),
-    Dark = Color3.fromRGB(35, 18, 48),
-    Text = Color3.fromRGB(245, 235, 255),
+    Main = Color3.fromRGB(163, 73, 164),
+    Accent = Color3.fromRGB(163, 73, 164),
+    Dark = Color3.fromRGB(163, 73, 164),
+    Text = Color3.fromRGB(163, 73, 164),
 }
 
 local _DrawingNew = Drawing.new
@@ -502,15 +502,6 @@ task.spawn(function()
         end
     end
 end)
-
-tb:AddToggle({
-    Id = "mod_detection_toggle",
-    Title = "Mod Detection",
-    Default = false,
-    Callback = function(v)
-        modDetectionEnabled = v
-    end,
-})
 
 local trk_tab = w:AddTab({ Title = "Tracker", Icon = "bar-chart" })
 local statsParagraph = trk_tab:AddParagraph({ Title = "Money Statistics", Content = "Status: Waiting for Auto Farm to start..." })
