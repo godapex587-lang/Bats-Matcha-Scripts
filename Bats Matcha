@@ -13,6 +13,7 @@ local PurpleUI = {
     Accent = Color3.fromRGB(163, 73, 164),
     Dark = Color3.fromRGB(163, 73, 164),
     Text = Color3.fromRGB(163, 73, 164),
+    TextFont = Font.Gotham
 }
 
 local _DrawingNew = Drawing.new
