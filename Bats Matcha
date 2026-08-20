@@ -350,5 +350,8 @@ local function bmi(inm, iprc, db)
     return false
 end
 
+local cr = w:AddTab({ Title = "SOON", Icon = "info" })
+cr:AddParagraph({ Title = "SOON", Content = "COMING SOON!" })
+
 local cr = w:AddTab({ Title = "Credits", Icon = "info" })
-cr:AddParagraph({ Title = "Credits", Content = "Script by @xban11\nUI by @d.unne" })
+cr:AddParagraph({ Title = "Credits", Content = "Script by Bat" })
